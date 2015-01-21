@@ -27,7 +27,6 @@ class Harmonics
 		double CentralPosition();
 		double CentralMomentum();
 		void TransformMass();
-		void Initialize();
 		~Harmonics();
 //	private:
 		Harmonic h [200];

@@ -1,0 +1,51 @@
+#!/usr/bin/python
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+f2 = open("phase_2.dat")
+f1 = open("phase.dat")
+#f = open("data_lang.txt")
+data1 = np.loadtxt(f1)
+data2 = np.loadtxt(f2)
+#print(data.shape)
+t1=data1[:,0]
+x1=data1[:,1]
+p1=data1[:,2]
+#e1=data1[:,3]
+t2=data2[:,0]
+x2=data2[:,1]
+p2=data2[:,2]
+e2=data2[:,3]
+
+#print(time_step)
+#plt.figure(figsize=(3.25,2.5))
+plt.figure(1)
+plt.tick_params(axis='both', which='major', labelsize=12)
+#plt.xlabel("q", fontsize = 12)
+#plt.ylabel("p", fontsize = 12)
+#plt.axis([0,20,-600 ,600 ])
+plt.plot(t1,x1,c='black')
+#plt.axis([-5, 5, -5, 5])
+#plt.axis([0,100, -0.06, 0.06])
+plt.figure(2)
+plt.tick_params(axis='both', which='major', labelsize=12)
+#plt.axis([0,20,-3,3])
+plt.plot(t2,x2,c='black')
+
+
+plt.figure(3)
+#plt.axis([-4,4,-4,4])
+plt.scatter(x1,p1,c='black')
+
+plt.figure(4)
+#plt.axis([-4,4,-4,4])
+plt.plot(t2,p2,c='black')
+#plt.figure(3)
+#plt.figure(1)
+#plt.tick_params(axis='both', which='major', labelsize=12)
+#plt.scatter(t1,x3,c='black')
+
+plt.show()
+#plt.savefig('lang_phase.png',dpi=600, bbox_inches="tight")
+#plt.savefig('VV_phase.png',dpi=600, bbox_inches="tight")

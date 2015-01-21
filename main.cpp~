@@ -24,7 +24,7 @@ int main() {
 	double j;
 	double dt;
 	double Et,R, kb, Temp;
-	Harmonics h(20);
+	Harmonics h(100);
 
 //	double xmin, xmax, dx;
 //	int Nbins, o;

@@ -146,7 +146,7 @@ void Harmonics::TransformXtoU()
 void Harmonics::ForceTransformXtoU() 
 {
 	double fsum, numer, denom;
-	double freq = 10.0;
+	double freq = 10.0
 	for(int k=1;k<=p;k++) {
 		fsum = 0.0;
 		if(k == 1) {

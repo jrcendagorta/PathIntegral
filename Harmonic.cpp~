@@ -66,7 +66,7 @@ void Harmonic::ForceCalc(double Fext)
 /**
  * This solves Langevin dynamics associated with the BAOAB method. 
  */
-/*void Harmonic::Langevin(double time_step, double boltz, double Temp, double Fext)
+void Harmonic::Langevin(double time_step, double boltz, double Temp, double Fext)
 {
 	double dt = time_step;
 	double kb = boltz;
@@ -81,7 +81,7 @@ void Harmonic::ForceCalc(double Fext)
 	ForceCalc(Fext);
 	momentum = momentum + 0.5*dt*force;
 }
-*/
+
 Harmonic::~Harmonic()
 {
 }

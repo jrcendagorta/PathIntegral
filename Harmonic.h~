@@ -17,7 +17,7 @@ class Harmonic
 		void EnergyCalc();
 		void ForceCalc(double Fext);	
 		~Harmonic();
-		double mass1, mass2, friction, omega;
+		double mass, friction, omega;
 		double position, momentum, energy, force;
 		
 };
